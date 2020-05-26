@@ -1,0 +1,7 @@
+{
+  "name": "landingBanbogota",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
