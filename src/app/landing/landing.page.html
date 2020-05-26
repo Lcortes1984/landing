@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-title>Estimado Cliente</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="dark">
+    <ion-card color="dark" style="margin-top:50px;" mode="ios">
+        <ion-item color="primary">
+            <ion-icon color="light" slot="start" name="information-circle-outline"></ion-icon>
+            <ion-label>Información Importante</ion-label>
+        </ion-item>
+        <ion-card-content>
+            <p style="font-size:1.5em;" align="justify">
+                Está es una AppWeb exclusiva para información de pagos. La unica forma de ingreso es: Si se le envio un usuario y password encriptado.
+            </p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
+<ion-footer [translucent]="true">
+    <ion-toolbar color="dark" style="text-align: center;">
+        <img src="./assets/imagenes/intelibpo.png" class="img"><br>
+        <span style="font-size: small;">
+        "Aliado estratégico para Banco de Bogotá"
+      </span>
+    </ion-toolbar>
+</ion-footer>

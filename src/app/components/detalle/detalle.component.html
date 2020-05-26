@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-title>{{pageName}}</ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)="dismissModal()" *ngIf="idPage > 0">
+                <b>Regresar</b>
+            </ion-button>
+            <ion-button (click)="dismissModal()" *ngIf="idPage === 0">
+                <b>Cerrar</b>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="dark">
+    <img [src]="pagePath" *ngIf="idPage > 0">
+    <ion-card color="dark" *ngIf="idPage === 0" style="margin-top:50px;" mode="ios">
+        <!-- <ion-card-header color="primary">
+            <ion-card-title></ion-card-title>
+            <ion-icon name="information-circle-outline" slot="only"></ion-icon>
+        </ion-card-header> -->
+        <ion-item color="primary">
+            <ion-icon color="light" slot="start" name="information-circle-outline"></ion-icon>
+            <ion-label>Información Importante</ion-label>
+        </ion-item>
+        <ion-card-content>
+            <p style="font-size:1.5em;" align="justify">
+                Apreciado Cliente, para que su descuento sea aplicado debe seguir al píe de la letra los siguientes pasos al realizar su pago.
+            </p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

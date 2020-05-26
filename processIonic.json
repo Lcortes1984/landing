@@ -1,0 +1,8 @@
+{
+    apps: [{
+        name: "AppLanding",
+        script: "ionic serve --adrees=0.0.0.0 --port=8888",
+        instances: 1,
+        env: {}
+    }]
+}
